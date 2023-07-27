@@ -35,6 +35,11 @@
   display: flex;
   flex-direction: column;
 }
+
+.column-wrapper{
+  flex-direction: column;
+  padding: 120px 0 0 0;
+}
 .cardsContainer {
   gap: 20px;
 }
@@ -53,6 +58,22 @@
   font-size: 50px;
   font-weight: 600;
 }
+.first-row{
+  margin-bottom: 80px;
+  justify-content: space-between;
+  }
+ .second-row img {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .right p{
+    text-align: justify;
+  font-size: 16px;
+  width: 55ch;
+  margin-right: 110px;
+  padding: 19px 0 0 0;
+  }
 .sectionP {
   color: var(--currentColor);
   font-size: 14px;
@@ -216,34 +237,27 @@ main .banner .slogan p {
 }
 
 /* section2 biz kimik */
-.section2 .column-wrapper {
-  flex-direction: column;
-  padding: 120px 0 0 0;
-}
-.section2 .column-wrapper .first-row {
-  justify-content: space-between;
-  margin-right: 70px;
-}
 
-.section2 .column-wrapper .first-row {
+
+.section2 .first-row {
   margin-bottom: 80px;
+  justify-content: space-between;
 }
 
-.section2 .column-wrapper .first-row .right p {
+
+.section2 .first-row .right p {
   text-align: justify;
   font-size: 16px;
   width: 55ch;
   margin-right: 110px;
   padding: 19px 0 0 0;
 }
-.section2 .column-wrapper .second-row img {
-  width: 100%;
-  margin-bottom: 60px;
-}
-.section2 .column-wrapper .third-row {
+
+.section2.third-row {
   margin-bottom: 120px;
 }
-.section2 .column-wrapper .third-row p {
+
+.section2 .third-row p {
   width: 97ch;
   margin-inline: auto;
   color: #343a3e;
@@ -251,7 +265,7 @@ main .banner .slogan p {
   font-size: 16px;
   font-weight: 300;
 }
-.section2 .column-wrapper .third-row {
+.section2 .third-row {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -285,31 +299,31 @@ main .banner .slogan p {
   max-width: 1440px;
   bottom: 200px;
  }
-.section4 img{
+.section4 .bgImg{
 position: absolute;
 z-index: -1;
 }
-main .section4 .section4cardContainer {
+main .section4 .cardContainer {
   position: absolute;
   margin-top: 427.5px;
  
   gap: 31px;
 }
-main .section4 .section4TitleContainer {
+main .section4 .TitleContainer {
   position: absolute;
   width: 450px;
   margin-top: 296px;
   color: #000;
 }
 
-main .section4 .section4TitleContainer .section4Description {
+main .section4 .TitleContainer .Description {
   color: #fff;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-main .section4 .section4TitleContainer .section4Title {
+main .section4 .TitleContainer .Title {
   position: absolute;
   font-family: montserrat;
   color: #fff;
@@ -324,23 +338,33 @@ main .section4 .card {
   background: #fff;
   box-shadow: 0px 0px 15px 0px #920a39;
 }
-main .section4 .section4cardContainer .card .titleDescriptionContainer {
+main .section4 .cardContainer .card .titleDescriptionContainer {
   color: #343a3e;
   font-size: 14px;
   font-weight: 300;
 }
-/* main .section4 .section4cardContainer .card .groupImg {
-  position: absolute;
-  right: 20px;
- } */
-main .section4 .section4cardContainer .card .cardTitle {
+
+main .section4 .cardContainer .card .cardTitle {
   font-family: montserrat;
   font-size: 20px;
   font-weight: 600;
   color: #b90470;
 }
-main .section4 .section4cardContainer .card .cardDescription {
+main .section4 .cardContainer .card .cardDescription {
   color: #343a3e;
   font-size: 14px;
   font-weight: 300;
 }
+main .section4 .card .groupImg{
+  position: absolute;
+  right: 20px;
+}
+
+/* section 5 */
+.section5{
+  margin-top: 800px;
+}
+
+
+
+
